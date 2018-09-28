@@ -1,0 +1,50 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  color: @SubTitle !important;
+}
+h1,
+h2 {
+  color: @Title !important;
+}
+
+.approot {
+  height: 100%;
+  overflow: auto;
+  background-color: @bg;
+  font-size: 14px;
+  display: flex;
+  .app-container {
+    height: ~"calc(100vh - 70px)";
+    overflow-y: hidden;
+    background-color: @ContainerBg;
+    min-height: ~"calc(100vh - 70px)";
+    .app-content{
+      height: 100%;
+      box-sizing: border-box;
+      padding:20px 20px 20px 20px
+    }
+  }
+}
+
+.el-container{
+  .el-header{
+    padding:0;
+  }
+  .el-main{
+    padding:0;
+  }
+}
+.iconfont{
+  font-weight: 400;
+  vertical-align: middle;
+}
+a{
+  color:@blue;
+  text-decoration: none;
+}
+html,*{
+-webkit-text-size-adjust:none;
+outline:none !important;
+}

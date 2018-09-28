@@ -1,0 +1,60 @@
+.el-aside{
+  .el-menu-vertical{
+    height: calc(100vh - 70px);
+    background-color: @NavbarBackground;
+    .el-menu-item:not(.is-active) {
+      color:@NavFont;
+      &:hover{
+        background-color: @blackDark;
+      }
+      &:focus{
+        background-color: @blackDark;
+      }
+    }
+    .el-submenu {
+      background-color: @NavbarBackground;
+      .el-submenu__title {
+        background-color: @NavbarBackground;
+        color:@NavFont;
+        padding-left:30px !important;
+        text-align: left;
+        &:hover{
+          background-color: @blackDark;
+        }
+        &:focus{
+          background-color: @blackDark;
+        }
+      }
+      ul.el-menu{
+        background-color: @NavbarBackground;
+        .el-menu-item-group{
+          .el-menu-item-group__title{
+            padding:0 !important;
+          }
+          ul{
+            li{
+              min-width: 160px;
+              color:@NavFont;
+              padding-left:60px !important;
+              &:hover{
+              background-color: @blackDark;
+              }
+              &:focus{
+                background-color: @blackDark;
+              }
+            }
+          }
+        }
+      }
+    }
+    .is-active{
+      background-color: @blackDark !important;
+      color:@NavSelected !important;
+    }
+    .el-menu-item{
+      text-align: left;
+      padding-left:30px !important;
+    }
+    
+  } 
+}

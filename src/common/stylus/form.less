@@ -1,0 +1,44 @@
+.my-form_container{
+  .my_score-form{
+  }
+  .my-form{
+    padding: 30px 60px 10px 60px;
+  }
+  .action-btn_container{
+    width: 100%;
+    .borderd(side,top);
+    .text-algin(right);
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+.el-form{
+  .templpateName{
+    .el-form-item__label{
+      color: @hintText;
+    }
+  }
+  .el-form-item__label{
+    color:@FormLabelFont
+  }
+  .el-form-item{
+    margin-bottom:22px
+  }
+  .el-form-item__content {
+    position: relative;
+  }
+  .el-form-item.is-required .el-form-item__label:after{
+    content: '*';
+    color: #f56c6c;
+    margin-left: 4px;
+    position: relative;
+    top:2px;
+  }
+  .el-form-item.is-required .el-form-item__label:before{
+    content: '';
+  }
+}
+.el-form-item.is-required .el-form-item__label:before {
+  content: '';
+  margin-right: 0px;
+}

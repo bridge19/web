@@ -1,0 +1,121 @@
+
+.leftTree{
+  ul{
+    border-right: none;
+  }
+  background-color: @TreeBg;
+  height: ~"calc(100vh - 110px )";
+  min-height: ~"calc(100vh - 110px )";
+  overflow-y: hidden;
+  .borderd(all);
+  .leftTree-head{
+    width:100%;
+    height: 66px;
+    line-height: 66px;
+    .borderd(side);
+    .default-btn{
+      .myIcon{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .myText{
+        display: inline-block;
+        line-height: 16px;
+      }
+    }
+  }
+  .leftTree-container{
+    height: ~"calc(100vh - 176px )";
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display:none;
+    }
+  }
+  .el-menu-vertical-tree {
+    .is-opened{
+      .el-submenu__icon-arrow{
+        right: 195px;
+      }
+    }
+    .el-submenu__title{
+      padding:0 10px;
+      padding-left:30px !important;
+      .text-algin();
+      color:@TreeColor;
+      .el-submenu__icon-arrow{
+        right: 195px;
+        margin-top: -5px;
+      }
+    }
+    .tree-title{
+      display: inline-block;
+      margin-right: 5px;
+      .tree-title-title{
+        max-width:80px;
+        display: inline-block;
+        .text-hidden()
+      }
+    }
+    .tree-oepration{
+      position: absolute;
+      right:10px;
+    }
+    ul {
+      .el-menu-item.is-active{
+        color:@TreeColor;
+        background-color: @TreeSelectBg;
+      }
+    }
+    .el-menu-item i{
+      color:@icon;
+    }
+    .el-submenu__title i{
+      color:@icon;
+    }
+    .el-menu-item-group__title{
+      padding:0;
+    }
+    .el-menu-item-group{
+      ul {
+        li {
+          padding-left:50px !important;
+          text-align:left
+        }
+      }
+    }
+    .iconfont{
+      color: @finishBg-inner;
+    }
+    .submenu{
+      border-bottom: 1px solid @border;
+      background-color: @white;
+      .icon-ic_folder{
+        display: inline-block;
+        width: 16px;
+        height: 13px;
+        font-size: 11px;
+        line-height: 13px;
+        color: @icon;
+      }
+      .icon-ic_edit_normal{
+        visibility: hidden;
+      }
+      .menuItem{
+        border-top: 1px solid @border;
+        background-color: @white;
+      }
+      .menuItem:hover{
+        background-color: @greyLightLight;
+        .icon-ic_edit_normal{visibility: visible;}
+      }
+      .el-submenu__title:hover{
+        .reNameFolder{
+          .icon-ic_edit_normal{visibility: visible;}
+        }
+      }
+    }
+  }
+}

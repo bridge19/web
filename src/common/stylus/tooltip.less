@@ -1,0 +1,37 @@
+.tree-tooltip__content{
+  // #dcdfe6
+  &.is-light{
+    border-color:@border;
+    .box-shadow();
+  }
+  &.is-light[x-placement^=top] .popper__arrow {
+    border-top-color: @border
+  }
+  &.is-light[x-placement^=top] .popper__arrow::after {
+    border-top-color: #fff
+  }
+  .is-light[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: @border
+  }
+  &.is-light[x-placement^=bottom] .popper__arrow::after {
+    border-bottom-color: #fff
+  }
+  &.is-light[x-placement^=left] .popper__arrow {
+    border-left-color: @border
+  }
+  &.is-light[x-placement^=left] .popper__arrow::after {
+    border-left-color: #fff
+  }
+  &.is-light[x-placement^=right] .popper__arrow {
+    border-right-color: @border
+  }
+  &.is-light[x-placement^=right] .popper__arrow::after {
+    border-right-color: #fff
+  }
+}
+
+.el-tooltip__popper{
+  max-width: 100px;
+  .word-wrap()
+}
+

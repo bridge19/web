@@ -1,0 +1,25 @@
+.borderd(all) {
+  border: 1px solid @border;
+}
+.borderd(side,@side:bottom) {
+  border-@{side}: 1px solid @border;
+}
+.text-algin(@dir:left){
+  text-align: @dir;
+}
+.text-hidden(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+.fl(@dir:right){
+  float: @dir
+}
+.box-shadow(){
+  box-shadow: 0.1px 0.1px 10px 1px rgba(233, 233, 230, 1);
+}
+.word-wrap(){
+  white-space: pre-wrap;
+  word-wrap:break-word;
+  word-wrap:break-word;
+}

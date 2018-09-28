@@ -1,0 +1,78 @@
+.el-table--border::after, .el-table--group::after, .el-table::before{
+  background: transparent!important;
+}
+.verbal_table{
+  .iconfont{
+    color:@icon;
+    cursor: pointer;
+  }
+  .zk-table--row-hover{
+    background-color: #f5f7fa !important;
+  }
+  .el-tag--info{
+    background-color: @OtherStatus;
+    border-color: @OtherStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .el-tag--warning{
+    background-color: @WarningStatus;
+    border-color: @WarningStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .el-tag--success{
+    background-color: @SucccessStatus;
+    border-color: @SucccessStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .el-tag--danger{
+    background-color: @ErrorStatus;
+    border-color: @ErrorStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .el-tag--prime{
+    background-color: @PrimeStatus;
+    border-color: @PrimeStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .el-tag--better{
+    background-color: @BetterStatus;
+    border-color: @BetterStatus;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .table_line{
+    display:inline;
+    border-left:1px solid rgba(0,0,0,0.1);
+    margin-right:6px;
+    margin-left:3px;
+  }
+  .table_button{
+    color: @blueDark;
+  }
+  .el-table__header-wrapper{
+    border-top: 1px solid #E6EAEE;
+    border-left: 1px solid #E6EAEE;
+    border-right: 1px solid #E6EAEE;
+    background-color: #F5F8FA;
+  }
+  th{
+    background-color: #F5F8FA;
+  }
+  .el-table__body-wrapper{
+    border-top: 1px solid #E6EAEE;
+    border-left: 1px solid #E6EAEE;
+    border-right: 1px solid #E6EAEE;
+    border-top: none;
+    tr:last-child{
+      border-bottom:none
+    }
+    .el-table td{
+      border-bottom: 1px solid #E6EAEE;
+    }
+  }
+}

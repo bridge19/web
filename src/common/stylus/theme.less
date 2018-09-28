@@ -1,0 +1,174 @@
+.theme_container{
+
+  // 语境
+  .sutationBg{
+    background-color: @situationBg;
+  }
+  .situationBg-open{
+    background-color: @situationBg-open;
+  }
+  .situationBg-sure{
+    background-color: @situationBg-sure;
+  }
+  .situationBg-neutral{
+    background-color: @situationBg-neutral;
+  }
+  .situationBg-negate{
+    background-color: @situationBg-negate;
+  }
+  .situationBg-refuse{
+    background-color: @situationBg-refuse;
+  }
+
+  .first-level-open{
+    background-color: #DDF2FF !important;
+  }
+  .first-level-normal{
+    background-color: #E2FFF2 ;
+  }
+  .first-level-re{
+    background-color: #D6E4FF !important;
+  }
+  .first-level-search{
+    background-color: #EEE2FF !important;
+  }
+
+
+
+  .second-level{
+    background-color: #FFFFE2;
+  }
+  .third-level{
+    background-color: #FFE2E2;
+  }
+
+  .t-list{
+    width:100%;
+    box-sizing: border-box;
+    .t-left{
+
+    }
+    .t-right{
+      padding-top:10px;
+      flex:1 1 auto;
+      .t-right_container{
+        display: flex;
+        border: 1px solid #e6eaee;
+        background-color: #fafbfc;
+        justify-content: flex-start;
+        position: relative;
+        align-items: stretch;
+        .t-list__title{
+          min-height: 76px;
+          width: 100px;
+          min-width: 100px;
+          line-height: 100%;
+          padding: 0 20px;
+          box-sizing: border-box;
+          display: flex;
+          div{
+            text-align: center;
+            margin: auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            font-weight: 700;
+          }
+        }
+        .t-right__body{
+          flex:1 1 auto;
+          .t-r-body-contaienr{
+            padding: 20px 30px;
+            box-sizing: border-box;
+            display: flex;
+            .b-left{
+              line-height: 100%;
+              font-weight: 700;
+              padding:0 20px 0 0;
+              .yuzhuan{
+                margin-top:5px;
+                border: 1px solid @yellowBtn;
+                color:@yellowBtn;
+                padding:3px;
+              }
+            }
+            .b-right{
+              flex:1 1 auto;
+              .b-right-word{
+                width:100%;
+                margin-bottom:10px;
+              }
+              .b-right-action{
+                width:100%;
+                position: relative;
+                .action_second{
+                  position: relative;
+                  text-align: left;
+                  .action_add{
+                    position: absolute;
+                    left:0px;
+                    cursor: pointer;
+                  }
+                  .action_btn{
+                    position: absolute;
+                    left:150px;
+                    vertical-align: top;
+                    background-color: #fff;
+                    border: 6px;
+                    padding: 5px;
+                    top:-10px;
+                    z-index: 100;
+                    .el-button{
+                      padding:5px;
+                    }
+                  }
+                  .action_delete{
+                    position: absolute;
+                    right:0px;
+                    cursor: pointer;
+                    color:@icon;
+                  }
+                }
+                .action_first{
+                  position: relative;
+                  padding-bottom: 10px;
+                  .action_add{
+                    position: absolute;
+                    right:30px;
+                    cursor: pointer;
+                  }
+                  .action_delete{
+                    position: absolute;
+                    right:0px;
+                    cursor: pointer;
+                    color:@icon;
+                  }
+                  .action_biaoji{
+                    position: absolute;
+                    right:100px;
+                    cursor: pointer;
+                  }
+                  .action_btn{
+                    position: absolute;
+                    right:100px;
+                    vertical-align: top;
+                    background-color: #fff;
+                    border-radius: 6px;
+                    border:1px solid @border;
+                    z-index: 100;
+                    box-shadow: 0.1px 0.1px 1px 1px #E6EAEE;
+                    padding: 5px;
+                    top:-10px;
+                    .el-button{
+                      padding:5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+     
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.el-steps{
+    .el-step{
+      .el-step__head{
+        border-color: #2096EF!important;
+        color:#fff;
+        .el-step__icon.is-text{
+          background: #C8D2DF;
+          border-color: transparent;
+          
+        }
+        .el-step__icon.is-text:before{
+            content:"1";
+            width: 20px;
+            background: #fff;
+            height: 20px;
+            position: absolute;
+            color: #fff;
+            left:-22px;
+          }
+      }
+      
+      .el-step__head.is-process,.el-step__head.is-finish{
+        border-color: transparent;
+        color:#fff;
+        .el-step__icon.is-text{
+          background: #2096EF!important;
+          border-color: transparent;
+        }
+      }
+      .el-step__head.is-finish{
+        .el-step__line{
+          background-image: linear-gradient(89deg, rgb(32, 198, 239) 9%, rgb(83, 80, 255) 90%);
+        }
+      }
+    }
+    
+    .steptext{
+          position: absolute;
+          top: -2px;
+          color: #000;
+          font-size: 18px;
+          left: 22px;
+          background-color: #fff;
+          padding-left: 5px;
+          padding-right: 20px;
+    }
+  }
